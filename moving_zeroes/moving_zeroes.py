@@ -5,13 +5,13 @@ Returns: a List of integers
 
 
 def moving_zeroes(arr):
-    # for loop
+    # Your code here
     if 0 not in arr:
         return arr
     else:
-        for i in arr:
+        for i in range(len(arr)):
             # check if i != 0
-            if i != 0:
+            if arr[i] != 0:
                 #  pop & move to the front of the array
                 old_value = arr[i]
                 arr.pop(i)
@@ -21,6 +21,6 @@ def moving_zeroes(arr):
 
 if __name__ == '__main__':
     # Use the main function here to test out your implementation
-    arr = [0, 3, 1, 0, -2]
+    arr1 = [0, 3, 1, 0, -2]
 
-    print(f"The resulting of moving_zeroes is: {moving_zeroes(arr)}")
+    print(f"The resulting of moving_zeroes is: {moving_zeroes(arr1)}")
